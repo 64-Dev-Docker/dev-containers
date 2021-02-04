@@ -1,0 +1,6 @@
+.Getting Windows Git Credentials into WSL2
+[source, bash]
+----
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
+----
+https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git#git-credential-manager-setup[MS Source]
