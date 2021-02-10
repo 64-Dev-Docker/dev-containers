@@ -37,3 +37,22 @@ To the best of my knowledge this technology does not apply to Visual Studio.
 * https://hub.docker.com/[Docker Hub]
 * https://gist.github.com/waltiam/c94e2d042cac1e7976ebac9e683f2287[go lang docker container configuration (github.com)]
 ----
+
+== Issues
+
+If you've run into issues with file ownership:
+
+.Linux Error
+[source,bash]
+----
+> git commit -m"clever commit message"
+$ fatal: could not open '.git/COMMIT_EDITMSG': Permission denied
+----
+
+.This should resolve the immediate challenge
+[source, bash]
+----
+> chown -R $(whoami) .
+----
+
+A better, and longer term solution would be to review the users in the local and remote docker container.
