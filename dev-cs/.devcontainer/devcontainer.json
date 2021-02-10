@@ -15,7 +15,14 @@
 	"extensions": [
 		"formulahendry.code-runner",
 		"hbenl.vscode-test-explorer",
-		"asciidoctor.asciidoctor-vscode"
+		"asciidoctor.asciidoctor-vscode",
+		"mhutchie.git-graph",
+		"alefragnani.bookmarks",
+		"eamodio.gitlens",
+		"github.vscode-pull-request-github",
+		"donjayamanne.githistory",
+		"hoovercj.vscode-power-mode",
+		"derivitec-ltd.vscode-dotnet-adapter"
 	]
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
