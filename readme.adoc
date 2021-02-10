@@ -1,6 +1,22 @@
 Bases for VSCode DevContainers
 ==============================
 
+.Getting Windows Git Credentials into WSL2
+[source, bash]
+----
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
+----
+https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git#git-credential-manager-setup[MS Source]
+
+.Getting a .devcontainer.json into a repo
+[source,bash]
+----
+curl --output .devcontainer.json -L  https://gist.github.com/waltiam/c94e2d042cac1e7976ebac9e683f2287/raw # <1>
+----
+<1> in this case this is the `.devcontainer.json` for the go lang container.
+
+
+
 There is a far better repository by Microsoft https://github.com/microsoft/vscode-dev-containers/tree/master/containers[here].
 
 Here are my initial notes on this:
