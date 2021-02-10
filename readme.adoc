@@ -1,3 +1,6 @@
+Bases for VSCode DevContainers
+==============================
+
 .Getting Windows Git Credentials into WSL2
 [source, bash]
 ----
@@ -11,3 +14,24 @@ https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git#git-credential-ma
 curl --output .devcontainer.json -L  https://gist.github.com/waltiam/c94e2d042cac1e7976ebac9e683f2287/raw # <1>
 ----
 <1> in this case this is the `.devcontainer.json` for the go lang container.
+
+There is a far better repository by Microsoft https://github.com/microsoft/vscode-dev-containers/tree/master/containers[here].
+
+Here are my initial notes on this:
+
+----
+This is a quick walk through of setting up a development environment in VS Code using docker images. I don't claim great knowledge on this, I've got them running and they seem to be ok.
+
+I'll share and discuss my Dockerfile and .devcontainer.json .
+
+Discuss next steps (docker compose with multiple container environments).
+
+Please invite other team members are you see fit, while I will be using GO and Sectigo as example, this would work with any other platform. 
+
+To the best of my knowledge this technology does not apply to Visual Studio.
+
+* https://code.visualstudio.com/docs/remote/remote-overview[Visual Sutdio Remote Development]
+* https://github.com/64-Dev-Docker/dev-env[64-Dev-Docker/dev-env (github.com)]
+* https://hub.docker.com/[Docker Hub]
+* https://gist.github.com/waltiam/c94e2d042cac1e7976ebac9e683f2287[go lang docker container configuration (github.com)]
+----
