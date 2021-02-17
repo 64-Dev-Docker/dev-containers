@@ -1,3 +1,3 @@
 #! /bin/bash
 # install angular
-npm install --global @angular/cli@9.0.7
+npm install --global @angular/cli
