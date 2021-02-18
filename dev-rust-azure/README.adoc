@@ -1,0 +1,17 @@
+Rust-Azure
+==========
+
+## Summary
+
+* https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions
+** the VS Code extension
+* https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=linux%2Ccsharp%2Cbash#v2
+** the azure required bits
+
+.Docker Commands
+[source, shell]
+----
+docker image build -t dev-rust-azure .
+docker image tag $( docker image ls dev-rust-azure --quiet ) wawa64/dev-rust-azure:latest
+docker image push  wawa64/dev-rust-azure:latest
+----
