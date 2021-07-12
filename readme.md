@@ -26,10 +26,10 @@ There is a far better repository by Microsoft [here](https://github.com/microsof
 
 This is a quick walk through of setting up a development environment in VS Code using docker images. I don't claim great knowledge on this, I've got them running and they seem to be ok.
 
-* https://code.visualstudio.com/docs/remote/remote-overview[Visual Sutdio Remote Development]
-* https://github.com/64-Dev-Docker/dev-env[64-Dev-Docker/dev-env (github.com)]
-* https://hub.docker.com/[Docker Hub]
-* https://gist.github.com/waltiam/c94e2d042cac1e7976ebac9e683f2287[go lang docker container configuration (github.com)]
+* [Visual Sutdio Remote Development](https://code.visualstudio.com/docs/remote/remote-overview)
+* [64-Dev-Docker/dev-env (github.com)](https://github.com/64-Dev-Docker/dev-env)
+* [Docker Hub](https://hub.docker.com/)
+* [go lang docker container configuration (github.com)](https://ygist.github.com/waltiam/c94e2d042cac1e7976ebac9e683f2287)
 
 > To the best of my knowledge this technology does not apply to Visual Studio.
 
