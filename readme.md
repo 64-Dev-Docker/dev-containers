@@ -60,6 +60,18 @@ git submodule update
 
 ## SSH and Commit Signing
 
+[Microsoft has this to say about it.](https://code.visualstudio.com/docs/remote/containers#_sharing-git-credentials-with-your-container)
+
+The short of this is that there are three options:
+
+1. SSH without a passphrase - relying on the public/private key pair.
+1. HTTPS using the Windows Credential Manager
+1. Use the VSCode terminal and not the UI
+
+I opted to go with SSH and no passphrase; the UI tools within VSCode allow for the PR into branches to be and using HHTPS potentially exposes the github credential to attack.
+
+THe GPG and GPG/SM processes below could also be set to use password free, again relying on the public/private keys.
+
 ### SSH
 
 The general idea is that I do not want tokens, credentials or passwords in the repo.  This means there will be inevitably some manual steps happening.  To start with we share the ~/.ssh folder with the docker image as ${user}/.ssh, as long as the ssh token have been properly configured in github this should work.
