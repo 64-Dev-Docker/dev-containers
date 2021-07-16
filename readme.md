@@ -1,5 +1,9 @@
 # Developing in DevContainers
 
+## Use This Kit
+
+- create a git repo that has the base files and start tweaking
+
 ## Getting Windows Git Credentials into WSL2
 
 ```bash
@@ -111,6 +115,18 @@ Other things that I still need to explore to help stablize the signing environme
 - `gpgconf --kill gpg-agent`
 - `echo UPDATESTARTUPTTY | gpg-connect-agent`
 
+### Password Prompting ...
+
+- Installing the [Gpg4win](https://gpg4win.org/index.html) tool.  
+- Update the `~/.gnupg/gpg-agent.conf` file with the addition of:
+
+```txt
+pinentry-program "/mnt/c/Program Files (x86)/GnuPG/bin/pinentry-basic.exe"
+default-cache-ttl 34560000
+max-cache-ttl 34560000
+```
+
+Execute a `gpgconf --kill gpg-agent` for good luck (gI feel this is sort of like a goat sacrifice at this point).
 
 ### Resources that Got Us Here
 
