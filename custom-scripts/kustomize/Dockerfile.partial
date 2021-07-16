@@ -1,0 +1,4 @@
+# install kustomize
+COPY custom-scripts/kustomize/* /tmp/library-scripts/
+RUN /bin/bash /tmp/library-scripts/install-kustomize.sh \
+    && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts/

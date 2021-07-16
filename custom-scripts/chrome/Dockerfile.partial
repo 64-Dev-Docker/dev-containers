@@ -1,0 +1,4 @@
+# Install Chrome (headless)
+COPY custom-scripts/chrome/* \
+    /tmp/library-scripts/
+RUN /bin/bash /tmp/library-scripts/install-chrome.sh:w

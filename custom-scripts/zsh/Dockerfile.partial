@@ -1,0 +1,4 @@
+# Install and configure zsh
+COPY custom-scripts/zsh/* /tmp/library-scripts/
+RUN /bin/bash /tmp/library-scripts/update-zsh.sh "${USERNAME}" \
+    && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts/

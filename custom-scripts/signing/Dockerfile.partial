@@ -1,0 +1,7 @@
+
+# Configure SSH ... 
+# Configure commit signing
+COPY custom-scripts/security/* /tmp/library-scripts/
+RUN /bin/bash /tmp/library-scripts/configure-sign.sh "${USERNAME}" \
+    /bin/bash /tmp/certs/configure-cert.sh \
+    && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts/
