@@ -1,0 +1,15 @@
+[submodule "submodule-kube"]
+	path = submodule-kube
+	url = git@github.com:64-Dev-Docker/submodule-kube.git
+[submodule "submodule-golang"]
+	path = submodule-golang
+	url = git@github.com:64-Dev-Docker/submodule-golang.git
+[submodule "submodule-node"]
+	path = submodule-node
+	url = git@github.com:64-Dev-Docker/submodule-node.git
+[submodule "submodule-dotnet"]
+	path = submodule-dotnet
+	url = git@github.com:64-Dev-Docker/submodule-dotnet.git
+[submodule "submodule-rust"]
+	path = submodule-rust
+	url = git@github.com:64-Dev-Docker/submodule-rust.git
