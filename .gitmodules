@@ -13,3 +13,6 @@
 [submodule "submodule-rust"]
 	path = submodule-rust
 	url = git@github.com:64-Dev-Docker/submodule-rust.git
+[submodule "submodule-markdown"]
+	path = submodule-markdown
+	url = git@github.com:64-Dev-Docker/submodule-markdown.git
