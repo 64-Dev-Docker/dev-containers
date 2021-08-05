@@ -58,6 +58,14 @@ git submodule update
 
 - [Configuring WSL](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig)
 
+Sone extensions (_GitGraph_) require `socat` to communicate with the host this can be installed with:
+
+```sh
+sudo apt-get install socat
+```
+
+Executed from the WSL shell.
+
 ## SSH and Commit Signing
 
 [Microsoft has this to say about it.](https://code.visualstudio.com/docs/remote/containers#_sharing-git-credentials-with-your-container)
@@ -181,8 +189,6 @@ This is a quick walk through of setting up a development environment in VS Code 
 * [go lang docker container configuration (github.com)](https://ygist.github.com/waltiam/c94e2d042cac1e7976ebac9e683f2287)
 
 > To the best of my knowledge this technology does not apply to Visual Studio.
-
-
 
 ## Issues
 
